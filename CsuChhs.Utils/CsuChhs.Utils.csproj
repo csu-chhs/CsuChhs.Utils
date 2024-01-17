@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>CHHS Application Development Team</Authors>
+    <Version>1.0.0</Version>
+    <PackageProjectUrl>https://github.com/csu-chhs/CsuChhs.Utils</PackageProjectUrl>
+    <Company>College of Health and Human Sciences</Company>
+    <PackageId>CsuChhs.Utils</PackageId>
+    <PackageDescription>Common Tools for .Net Projects</PackageDescription>
+    <RepositoryUrl>https://github.com/csu-chhs/CsuChhs.Utils</RepositoryUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="../README.md" Pack="true" PackagePath="\"/>
+  </ItemGroup>
+</Project>
