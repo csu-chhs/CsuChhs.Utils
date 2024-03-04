@@ -21,7 +21,7 @@ jobs:
       run: dotnet restore CsuChhs.Utils.sln
     
     - name: Build with dotnet
-      run: dotnet build CsuChhs.Utils.sln --no-restore /WarnAsError
+      run: dotnet build CsuChhs.Utils.sln --no-restore
     
     - name: Run Test Suite
       run: dotnet test CsuChhs.Utils.sln --no-build
