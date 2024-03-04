@@ -314,6 +314,21 @@ namespace CsuChhs.Utils.Services
             return start < end;
         }
 
+        /// <summary>
+        /// Returns a new date time object that maintins the 
+        /// time of a previous object while changing the 
+        /// date.
+        /// </summary>
+        /// <param name="year"></param>
+        /// <param name="month"></param>
+        /// <param name="day"></param>
+        /// <param name="time"></param>
+        /// <returns></returns>
+        public static DateTime CreateDateFromTime(int year, int month, int day, DateTime time)
+        {
+            return new DateTime(year, month, day, time.Hour, time.Minute, 0);
+        }
+
         private static bool IsWeekday(this DateTime dateTimeValue)
         {
             switch (dateTimeValue.DayOfWeek)
