@@ -23,6 +23,25 @@
             return CleanToken(_GenerateToken());
         }
 
+        /// <summary>
+        /// Generates a random number between two
+        /// numbers.
+        /// </summary>
+        /// <param name="min"></param>
+        /// <param name="max"></param>
+        /// <returns></returns>
+        public static int RandomNumber(int min, int max)
+        {
+            return _GenerateRandomInt(min, max);
+        }
+
+        private static int _GenerateRandomInt(int min,
+            int max)
+        {
+            Random random = new();
+            return random.Next(min, max);
+        }
+
         private static string _GenerateToken()
         {
             return Convert.ToBase64String(Guid.NewGuid().ToByteArray());
