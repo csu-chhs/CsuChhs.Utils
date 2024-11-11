@@ -4,7 +4,7 @@
     {
         public GenericNullableSearchDateFilterForm()
         {
-
+            Search = string.Empty;
         }
 
         public GenericNullableSearchDateFilterForm(DateTime? start,
