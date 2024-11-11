@@ -9,6 +9,25 @@ namespace CsuChhs.Utils.Services
         }
 
         /// <summary>
+        /// Return all dates within (and including start/end)
+        /// of a given range of time.
+        /// </summary>
+        /// <param name="start"></param>
+        /// <param name="end"></param>
+        /// <returns></returns>
+        public static List<DateTime> GetDatesInRange(DateTime start,
+            DateTime end)
+        {
+            List<DateTime> dates = new List<DateTime>();
+            for (DateTime date = start; date <= end; date = date.AddDays(1))
+            {
+                dates.Add(date);
+            }
+
+            return dates;
+        }
+
+        /// <summary>
         /// Given a date, return the first day of the previous month.  Helpful in
         /// determining billing start dates for jobs.
         /// </summary>

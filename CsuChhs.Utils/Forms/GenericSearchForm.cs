@@ -2,7 +2,7 @@ namespace CsuChhs.Utils.Forms
 {
     public class GenericSearchForm
     {
-        private string _search;
+        private string _search = string.Empty;
 
         public GenericSearchForm()
         {

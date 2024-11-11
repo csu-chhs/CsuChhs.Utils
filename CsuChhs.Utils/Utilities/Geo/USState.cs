@@ -13,8 +13,8 @@
 
         public USState()
         {
-            Name = null;
-            Abbreviation = null;
+            Name = string.Empty;
+            Abbreviation = string.Empty;
         }
 
         /// <summary>
