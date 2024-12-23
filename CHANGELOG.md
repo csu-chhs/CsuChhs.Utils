@@ -1,3 +1,6 @@
+### 1.0.5
+- Moved string extension to CsuChhs.Extensions
+
 ### 1.0.4
 - Added URL Encode string extension
 

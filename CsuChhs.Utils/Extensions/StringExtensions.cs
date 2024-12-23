@@ -1,20 +1,7 @@
-using System.Net;
-
 namespace CsuChhs.Utils.Extensions
 {
     public static class StringExtensions
     {
-        /// <summary>
-        /// Convert string into a URL encoded string.
-        /// </summary>
-        /// <param name="value"></param>
-        /// <returns></returns>
-        public static string ToUrlEncodedString(this string value)
-        {
-            return WebUtility.UrlEncode(value);
-        }
-        
-        
         /// <summary>
         /// Validates the *format* of a potential
         /// CSUID.  This does not validate that the CSUID
