@@ -1,3 +1,6 @@
+### 1.0.4
+- Added URL Encode string extension
+
 ### 1.0.3
 - Add Dates in range method
 
