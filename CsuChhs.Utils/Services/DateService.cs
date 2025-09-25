@@ -2,10 +2,10 @@ namespace CsuChhs.Utils.Services
 {
     public static class DateService
     {
-        public enum AMPM
+        public enum AmPm
         {
-            AM,
-            PM
+            Am,
+            Pm
         }
 
         /// <summary>
@@ -153,16 +153,16 @@ namespace CsuChhs.Utils.Services
         /// Converts an existing hour and am/pm to a 24 hour clock.
         /// </summary>
         /// <param name="time"></param>
-        /// <param name="ampm"></param>
+        /// <param name="amPm"></param>
         /// <returns></returns>
-        public static int ConvertAMPMToHourClock(int time, AMPM ampm)
+        public static int ConvertAMPMToHourClock(int time, AmPm amPm)
         {
-            if (ampm == AMPM.PM && time == 12)
+            if (amPm == AmPm.Pm && time == 12)
             {
                 return time;
             }
 
-            if (ampm == AMPM.AM)
+            if (amPm == AmPm.Am)
             {
                 return time;
             }
