@@ -4,7 +4,7 @@ namespace CsuChhs.Utils.Utilities.Files
 {
     public class Archive
     {
-        private ICollection<ZipDocument> _zipDocuments;
+        private readonly ICollection<ZipDocument> _zipDocuments;
 
         public Archive()
         {
