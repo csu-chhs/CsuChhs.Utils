@@ -1,3 +1,6 @@
+### 1.0.6
+- Added ResultSet which is helpful in DDD archiectures.
+
 ### 1.0.5
 - Moved string extension to CsuChhs.Extensions
 
