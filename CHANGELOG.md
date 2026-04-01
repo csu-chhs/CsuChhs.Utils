@@ -1,3 +1,6 @@
+### 1.0.7
+- Added Problem details as a class for API responses.
+
 ### 1.0.6
 - Added ResultSet which is helpful in DDD archiectures.
 
