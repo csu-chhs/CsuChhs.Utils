@@ -2,7 +2,7 @@
 
 namespace CsuChhs.Utils.Utilities;
 
-public class CustomCustomProblemDetailsBuilder : ICustomProblemDetailsBuilder
+public class CustomProblemDetailsBuilder : ICustomProblemDetailsBuilder
 {
     private string? _type;
     private int? _status;
