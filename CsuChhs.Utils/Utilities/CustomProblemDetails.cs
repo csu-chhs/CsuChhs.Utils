@@ -1,6 +1,6 @@
 ﻿namespace CsuChhs.Utils.Utilities;
 
-public class ProblemDetails
+public class CustomProblemDetails
 {
     public int? Status { get; set; }
     public string? Title { get; set; }

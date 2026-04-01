@@ -2,7 +2,7 @@
 
 namespace CsuChhs.Utils.Utilities;
 
-public class ProblemDetailsBuilder : IProblemDetailsBuilder
+public class CustomCustomProblemDetailsBuilder : ICustomProblemDetailsBuilder
 {
     private string? _type;
     private int? _status;
@@ -10,40 +10,40 @@ public class ProblemDetailsBuilder : IProblemDetailsBuilder
     private string? _detail;
     private string? _instance;
 
-    public IProblemDetailsBuilder WithStatus(int status)
+    public ICustomProblemDetailsBuilder WithStatus(int status)
     {
         _status = status;
         return this;
     }
 
-    public IProblemDetailsBuilder WithTitle(string title)
+    public ICustomProblemDetailsBuilder WithTitle(string title)
     {
         _title = title;
         return this;
     }
 
-    public IProblemDetailsBuilder WithDetail(string detail)
+    public ICustomProblemDetailsBuilder WithDetail(string detail)
     {
         _detail = detail;
         return this;
     }
 
-    public IProblemDetailsBuilder WithInstance(string instance)
+    public ICustomProblemDetailsBuilder WithInstance(string instance)
     {
         _instance = instance;
         return this;
     }
 
-    public IProblemDetailsBuilder WithType(string type)
+    public ICustomProblemDetailsBuilder WithType(string type)
     {
         _type = type;
         return this;
     }
 
-    public ProblemDetails Build()
+    public CustomProblemDetails Build()
     {
         
-        return new ProblemDetails
+        return new CustomProblemDetails
         {
             Type = _type,
             Status = _status,
