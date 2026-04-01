@@ -1,3 +1,6 @@
+### 1.0.8
+- Renamed ProblemDetails to CustomProblemDetails to avoid confusion with the one in ASP.NET Core.
+
 ### 1.0.7
 - Added Problem details as a class for API responses.
 
