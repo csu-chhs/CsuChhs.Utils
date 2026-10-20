@@ -1,10 +1,6 @@
 ﻿namespace CsuChhs.Utils.Utilities;
-
-public class CustomProblemDetails
-{
-    public int? Status { get; set; }
-    public string? Title { get; set; }
-    public string? Detail { get; set; }
-    public string? Instance { get; set; }
-    public string? Type { get; set; }
-}
+public record CustomProblemDetails(int? Status, 
+    string? Title, 
+    string? Detail, 
+    string? Instance, 
+    string? Type);

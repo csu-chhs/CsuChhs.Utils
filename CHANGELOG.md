@@ -1,3 +1,7 @@
+### 1.0.10
+- Updated problem details to use a record.
+- Added Slugify string extension and tests.
+
 ### 1.0.9
 - Fix typo
 
