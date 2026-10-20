@@ -42,12 +42,6 @@ public class CustomProblemDetailsBuilder : ICustomProblemDetailsBuilder
 
     public CustomProblemDetails Build()
     {
-        return new CustomProblemDetails(
-            Status: _status,
-            Title: _title,
-            Detail: _detail,
-            Instance: _instance,
-            Type: _type
-        );
+        return new CustomProblemDetails(_status, _title, _detail, _instance, _type);
     }
 }
